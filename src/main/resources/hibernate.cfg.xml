@@ -16,7 +16,7 @@
     <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
-    <property name="hbm2ddl.auto">update</property>
+    <property name="hbm2ddl.auto">create</property>
     
     <!-- second level cache properties -->
     <property name="hibernate.cache.use_second_level_cache">true</property>
@@ -26,6 +26,8 @@
     <!--3- mapping details -->
     <mapping class="com.prowings.onetoone.entity.Student" />
     <mapping class="com.prowings.onetoone.entity.Address" />
+    <mapping class="com.prowings.onetoone.entity.Employee" />
+    <mapping class="com.prowings.onetoone.entity.Account" />
     
   </session-factory>
 </hibernate-configuration>
